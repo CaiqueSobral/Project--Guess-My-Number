@@ -1,6 +1,6 @@
 "use strict";
 
-let secretNumber = 15; //Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 10;
 let highScore = 0;
 
@@ -45,7 +45,7 @@ document.querySelector(".check").addEventListener("click", function () {
 document.querySelector(".again").addEventListener("click", function () {
   //RESET NUMBERS
   score = 10;
-  secretNumber = 15; //Math.trunc(Math.random() * 20) + 1;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
 
   //RESET THE TEXTS
   changeTextContent("?", "number");
